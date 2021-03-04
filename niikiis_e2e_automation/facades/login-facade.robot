@@ -5,13 +5,12 @@ Resource       ../../niikiis_e2e_automation/configuration/configuration-dev.robo
 ${email}  Name:user_email
 ${password}  Name:user_password
 ${button-SignIn}  css=*[data-test-id="button-component-10"]
-${home-img}   css=*[class="sc-jqBkfb cscUcv"]
 
 *** Keywords ***
 I am in niikiis login page
     Open Browser   ${URL_LOGIN}  chrome
 
-I fill the email
+I fill the email as Admin
     Wait Until Element is Visible   ${email}  30
     Input text   ${email}    ${EMAIL_ADMIN}
   
@@ -21,7 +20,3 @@ I fill the password
     
 I click the Sign In button
     click element  ${button-SignIn} 
-    
-Then the home is visible  
-    Wait Until Element is Visible   ${home-img}   20
-    Close browser

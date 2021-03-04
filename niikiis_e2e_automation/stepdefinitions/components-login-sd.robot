@@ -1,5 +1,5 @@
 *** Settings ***
-Resource        ../../niikiis_e2e_automation/pagesobjects/login-page-components.robot
+Resource        ../../niikiis_e2e_automation/pagesobjects/login-page.robot
 Resource       ../..//niikiisMary/niikiis/niikiis_e2e_automation/configuration/configuration-dev.robot
 
 
