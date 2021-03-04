@@ -8,7 +8,12 @@ Resource       ../../niikiis_e2e_automation/pagesobjects/home-page.robot
 Correct Login as Admin
    Given the niikiis login page is open
     When the login data are completed
-    Then the user session is opened
+    Then the user session is opened as Admin
+
+Correct Login as Human Resource
+   Given the niikiis login page is open
+    When the login data are completed
+    Then the user session is opened as Human Resource
 
 *** Keywords ***
 the niikiis login page is open
@@ -19,5 +24,8 @@ the login data are completed
     And I fill the password
     And I click the Sign In button
 
-the user session is opened
+the user session is opened as Admin
     Then the Home is visible for the Admin
+
+the user session is opened as Human Resource
+  Then the Home is visible for the Human Resource
