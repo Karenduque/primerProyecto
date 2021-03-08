@@ -93,3 +93,8 @@ robot tests.robot
             Contains the step-by-step for the execution of the test cases.
             
              
+
+### Important ###
+
+* https://github.com/robotframework/SeleniumLibrary/blob/master/README.rst#browser-drivers
+
