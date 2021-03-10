@@ -3,7 +3,7 @@ Resource      ../../niikiis_e2e_automation/pagesobjects/login-page.robot
 Resource      ../../niikiis_e2e_automation/configuration/configuration-dev.robot
 
 *** Keywords ***
-Then the content load correctly in the page
+the content load correctly in the page
      the niikiis logo is visible 
      the principal titulo text is visible
      the welcome text is visible  
