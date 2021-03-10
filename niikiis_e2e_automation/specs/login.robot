@@ -15,6 +15,11 @@ Correct Login as Human Resource
     When the login data are completed
     Then the user session is opened as Human Resource
 
+Correct Login as User
+    Given the niikiis login page is open
+    When the login data are completed
+    Then the user session is opened as User
+
 *** Keywords ***
 the niikiis login page is open
     Given I am in niikiis login page
@@ -25,7 +30,10 @@ the login data are completed
     And I click the Sign In button
 
 the user session is opened as Admin
-    Then the Home is visible for the Admin
+  Then the Home is visible for the Admin
 
 the user session is opened as Human Resource
   Then the Home is visible for the Human Resource
+
+the user session is opened as User
+  Then the Home is visible for the User 
