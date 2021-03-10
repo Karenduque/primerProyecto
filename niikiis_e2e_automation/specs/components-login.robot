@@ -15,4 +15,3 @@ that the niikiis login page is open
     
 the content load correctly 
     Then the content load correctly in the page
-  
