@@ -2,17 +2,17 @@
 
 
 *** Variables ***
-${logo}  css=*[class="sc-ellAub frWaKR"]
-${principal-text}  css=*[data-test-id='text-component-2']
-${text-component-2}   We help employees do their job better
-${welcome-text}  css=*[data-test-id="text-component-4"]
-${text-component-3}   Welcome to niikiis
-${initial-text}   css=*[data-test-id="text-component-5"]
-${text-component-4}   Sign in to your account
-${policy-link}  css=*[href="https://www.niikiis.com/privacy-policy/"]
-${text-component-5}   Privacy Policy
-${cookies-link}  css=*[href="https://www.niikiis.com/cookie-policy-eu/"]
-${text-component-6}   Cookie Policy
+${logo}  css=*[src="/static/media/logo.a44efe6e.png"]
+${principalText}  css=*[data-test-id='text-component-2']
+${textComponent2}   We help employees do their job better
+${welcomeText}  css=*[data-test-id="text-component-4"]
+${textComponent3}   Welcome to niikiis
+${initialText}   css=*[data-test-id="text-component-5"]
+${textComponent4}   Sign in to your account
+${policyLink}  css=*[href="https://www.niikiis.com/privacy-policy/"]
+${textComponent5}   Privacy Policy
+${cookiesLink}  css=*[href="https://www.niikiis.com/cookie-policy-eu/"]
+${textComponent6}   Cookie Policy
 ${footer}   css=*[data-test-id="text-component-11"]
-${text-component-7}   © 2021 Niikiis Knowtion
+${textComponent7}   © 2021 Niikiis Knowtion
 ${button}   css=*[data-test-id="button-component-10"]
