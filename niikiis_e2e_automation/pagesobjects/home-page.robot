@@ -33,7 +33,7 @@ the Home is visible for the Human Resource
   the Configuration menu is not displayed
   Close browser
 
-the user session is opened as ${Rol}
+the user session is opened as Author/User
   the People menu is displayed
   the Training menu is displayed
   the Channels menu is displayed

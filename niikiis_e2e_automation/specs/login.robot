@@ -15,12 +15,12 @@ Correct Login as Human Resource
     When the login data are completed
     Then the user session is opened as Human Resource
 
-Correct Login as User or Autor
-   [Template]  Correct Login template
-   # Rol
-   User
-   Autor
-   
+Correct Login as Author/User
+  [Template]  the user session is opened as Author/User
+  # Rol
+  Author
+  User
+      
 *** Keywords ***
 the niikiis login page is open
     Given I am in niikiis login page
@@ -36,8 +36,8 @@ the user session is opened as Admin
 the user session is opened as Human Resource
   Then the Home is visible for the Human Resource
 
-Correct Login template
+the user session is opened as Author/User
   [Arguments]  ${Rol}
     Given the niikiis login page is open
     When the login data are completed
-    Then the user session is opened as ${Rol}
+    the user session is opened as Author/User  ${Rol}
