@@ -2,7 +2,6 @@
 Library  Selenium2Library
 
 Resource        ../../niikiis_e2e_automation/stepdefinitions/components-login-sd.robot         
-         
 
 ***Test Cases***
 Check elements on Login page

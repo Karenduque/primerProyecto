@@ -20,7 +20,7 @@ the Home is visible for the Admin
   the Employee Journeys menu is displayed
   the Surveys menu is displayed
   the Configuration menu is displayed
-  Close browser
+  
 
 the Home is visible for the Human Resource
   the People menu is displayed

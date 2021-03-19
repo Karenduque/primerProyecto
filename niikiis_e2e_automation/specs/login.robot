@@ -6,9 +6,10 @@ Resource       ../../niikiis_e2e_automation/pagesobjects/home-page.robot
 
 ***Test Cases***
 Correct Login as Admin
-   Given the niikiis login page is open
-    When the login data are completed
-    Then the user session is opened as Admin
+   Given that login Admin
+   And the niikiis login page is open
+   When the login data are completed
+   Then the user session is opened as Admin
 
 Correct Login as Human Resource
    Given the niikiis login page is open

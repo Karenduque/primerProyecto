@@ -6,8 +6,8 @@ Resource       ../..//niikiisMary/niikiis/niikiis_e2e_automation/configuration/c
 
 *** Keywords ***
 I am in login page
-    Open Browser   ${${URL_LOGIN}  chrome
-    Set global Variable  ${${URL_LOGIN}
+    Open Browser   ${URL_LOGIN}  chrome
+    Set global Variable  ${URL_LOGIN}
 
 When the niikiis logo is visible
     Wait Until Element is Visible  ${logo}  30

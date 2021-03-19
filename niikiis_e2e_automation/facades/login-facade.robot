@@ -7,6 +7,12 @@ ${password}  Name:user_password
 ${button-SignIn}  css=*[data-test-id="button-component-10"]
 
 *** Keywords ***
+that I login as administrator
+   I am in niikiis login page
+   I fill the email as Admin
+   I fill the password
+   I click the Sign In button
+
 I am in niikiis login page
     Open Browser   ${URL_LOGIN}  chrome
 
