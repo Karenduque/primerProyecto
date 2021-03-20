@@ -5,8 +5,8 @@ Resource        ../../niikiis_e2e_automation/stepdefinitions/components-login-sd
 
 ***Test Cases***
 Check elements on Login page
-    Given that the niikiis login page is open
-    Then the content load correctly 
+   Given that the niikiis login page is open
+   Then the content load correctly 
 
 *** Keywords ***
 that the niikiis login page is open

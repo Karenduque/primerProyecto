@@ -22,8 +22,10 @@ enter the name of the category
 
 enter the name of the subcategory
   Wait Until Element is Visible    ${subcategoryName}  10
-  Input text   ${subcategoryName}    test 
+  Input text   ${subcategoryName}    Automatic 
 
 click the Submit button
-  Wait Until Element is Enabled    ${categorycreateButton}  10
+  Wait Until Element is Visible    ${categorycreateButton}  10
   Click element   ${categorycreateButton}
+  Wait Until Element is Visible   ${configurationText}  20
+  Close Browser
