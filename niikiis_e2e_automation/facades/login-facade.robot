@@ -7,7 +7,7 @@ ${password}  Name:user_password
 ${button-SignIn}  css=*[data-test-id="button-component-10"]
 
 *** Keywords ***
-that login as administrator
+Login as Admin
    I am in niikiis login page
    I fill the email as Admin
    I fill the password
@@ -25,4 +25,4 @@ I fill the password
    Input text   ${password}    ${PASS_ADMIN}
     
 I click the Sign In button
-    click element  ${button-SignIn} 
+   click element  ${button-SignIn} 

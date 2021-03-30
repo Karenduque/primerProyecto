@@ -15,7 +15,7 @@ Create categories as ADMIN
 
 *** Keywords ***
 that it is required to create category as Admin
-  Given that login as administrator
+  Given Login as Admin
   
 being in the Configuration section
   Given click the configuration icon
