@@ -15,17 +15,3 @@ select the Time off categories
 click the New Category button
   Wait Until Element is Visible   ${categoryButton}  10
   Click element   ${categoryButton}
-
-enter the name of the category
-  Wait Until Element is Visible   ${categoryName}  10
-  Input text   ${categoryName}    Test
-
-enter the name of the subcategory
-  Wait Until Element is Visible    ${subcategoryName}  10
-  Input text   ${subcategoryName}    Automatic 
-
-click the Submit button
-  Wait Until Element is Visible    ${categorycreateButton}  10
-  Click element   ${categorycreateButton}
-  Wait Until Element is Visible   ${configurationText}  20
-  Close Browser
