@@ -39,6 +39,8 @@ the user session is opened as Human Resource
 
 the user session is opened as Author/User
   [Arguments]  ${Rol}
-   Given the niikiis login page is open
-   When the login data are completed
-   the user session is opened as Author/User  ${Rol}
+
+  Given the niikiis login page is open
+  When the login data are completed
+  then user session is opened as Author/User  ${Rol}
+
