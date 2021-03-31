@@ -6,9 +6,10 @@ Resource       ../../niikiis_e2e_automation/pagesobjects/home-page.robot
 
 ***Test Cases***
 Correct Login as Admin
-   Given the niikiis login page is open
-    When the login data are completed
-    Then the user session is opened as Admin
+   Given that login Admin
+   And the niikiis login page is open
+   When the login data are completed
+   Then the user session is opened as Admin
 
 Correct Login as Human Resource
    Given the niikiis login page is open
@@ -23,12 +24,12 @@ Correct Login as Author/User
       
 *** Keywords ***
 the niikiis login page is open
-    Given I am in niikiis login page
+  Given I am in niikiis login page
     
 the login data are completed
-    When I fill the email as Admin
-    And I fill the password
-    And I click the Sign In button
+  When I fill the email as Admin
+  And I fill the password
+  And I click the Sign In button
 
 the user session is opened as Admin
   Then the Home is visible for the Admin
@@ -38,6 +39,8 @@ the user session is opened as Human Resource
 
 the user session is opened as Author/User
   [Arguments]  ${Rol}
-    Given the niikiis login page is open
-    When the login data are completed
-    the user session is opened as Author/User  ${Rol}
+
+  Given the niikiis login page is open
+  When the login data are completed
+  then user session is opened as Author/User  ${Rol}
+

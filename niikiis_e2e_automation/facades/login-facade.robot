@@ -7,16 +7,22 @@ ${password}  Name:user_password
 ${button-SignIn}  css=*[data-test-id="button-component-10"]
 
 *** Keywords ***
+Login as Admin
+   I am in niikiis login page
+   I fill the email as Admin
+   I fill the password
+   I click the Sign In button
+
 I am in niikiis login page
-    Open Browser   ${URL_LOGIN}  chrome
+   Open Browser   ${URL_LOGIN}  chrome
 
 I fill the email as Admin
-    Wait Until Element is Visible   ${email}  30
-    Input text   ${email}    ${EMAIL_ADMIN}
+   Wait Until Element is Visible   ${email}  30
+   Input text   ${email}    ${EMAIL_ADMIN}
   
 I fill the password
-    Wait Until Element is Visible   ${password}  30
-    Input text   ${password}    ${PASS_ADMIN}
+   Wait Until Element is Visible   ${password}  30
+   Input text   ${password}    ${PASS_ADMIN}
     
 I click the Sign In button
-    click element  ${button-SignIn} 
+   click element  ${button-SignIn} 
