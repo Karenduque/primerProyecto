@@ -8,7 +8,7 @@ click the edit Category button
 
 edit the name of the category
   Wait Until Element is Visible   ${categoryName}  10
-  Input text   ${categoryName}    Prueba.
+  Input text   ${categoryName}    Prueba
 
 change the color of the category
   select the color of the category

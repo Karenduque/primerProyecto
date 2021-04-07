@@ -1,6 +1,5 @@
 *** Settings ***
 
-
 *** Variables ***
 ${logoNiikiis}   css=*[src='/static/media/logo.a44efe6e.png']
 ${principalText}   css=*[data-test-id='text-component-2']
